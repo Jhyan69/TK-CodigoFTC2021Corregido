@@ -1,0 +1,4 @@
+Jan 18/17/2022: Por alguna razón el codigo registraba el control de Logitec como uno de PS4, por el momento solo agregé la configuración de PS4 en la Torreta, el hopper e intake. 
+-Recomiendo encontrar el error en la configuración de controles que registra el control como PS4 (se me ocurre que provemos con el control que es un joystick conectado al mismo tiempo que el otro control de logitec
+*Homero quiere que configuremos el control que es un joystick
+*Tenemos que ajustar la sensivilidad y potencia del shooter y el driver
