@@ -7,11 +7,11 @@ import frc.robot.Robot;
 
 
 public class Hopper {
-    static TalonSRX HopperTalon = new TalonSRX(7); //7
+    static TalonSRX HopperTalon = new TalonSRX(7); //CAN ID 7
 
 public void HopperTest(){
     if (Robot.control.readJoystickButtons(Constantes.LG_B4)){
-        HopperTalon.set(ControlMode.PercentOutput, 0.55); //negative?
+        HopperTalon.set(ControlMode.PercentOutput, 0.55); 
     }
     else if(Robot.control.readJoystickButtons(Constantes.LG_B5)){
         HopperTalon.set(ControlMode.PercentOutput, -0.55);
@@ -26,7 +26,7 @@ public void HopperTest(){
         }*/
 
     }
-    else if(Robot.control.readPS4Buttons(7)){ //6
+    else if(Robot.control.readPS4Buttons(7)){ //gatillo izquierdo 
         HopperTalon.set(ControlMode.PercentOutput, -0.55);
     }
     else{
