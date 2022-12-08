@@ -6,3 +6,13 @@ Jan 18/17/2022: Por alguna razón el codigo registra el control de Logitec como 
 *Tenemos que ajustar la sensivilidad y potencia del shooter y el driver
 
 ********************************************************************************************************************************************************************************************************************************************
+
+Jan 08/12/2022/: El código ahora aguanta los dos controles. El control que es un joystick grande no controla el movimiento, y solo lo hacen los joysticks pequeños del otro control. Igualmente, el control normal puede controlar todo por
+si se necesita. Genuinamente, los errores para eso eran varios, ya que se programó originalmente para solo funcionar con el joystick grande. Todo lo que quité para adaptarlo lo comenté o puse un comentario del valor original. Por ejemplo 
+el problema principal era que el puerto usb del control en el driver station se invirtió de 0 a 1. 
+La potencia del shooter la pueden cambiar desde un valor donde hay un comentario que dice //mantengan la potencia del shooter abajo de -0.90 y arriba de -0.50 
+*pero quiero implementar un valor fijo para eso
+Si no funciona el código chequen primero que todos los cables están conectados (ese fue el error de hoy), que el driver station está detectando los botones cuando los presionan (error del martes :) ).
+*le debemos Rafa por conectar el cable
+
+********************************************************************************************************************************************************************************************************************************************
