@@ -10,10 +10,10 @@ public class Hopper {
     static TalonSRX HopperTalon = new TalonSRX(7); //CAN ID 7
 
 public void HopperTest(){
-    if (Robot.control.readJoystickButtons(Constantes.LG_B4)){
+    if (Robot.control.readJoystickButtons(Constantes.LG_B12)){ //4
         HopperTalon.set(ControlMode.PercentOutput, 0.55); 
     }
-    else if(Robot.control.readJoystickButtons(Constantes.LG_B5)){
+   /* else if(Robot.control.readJoystickButtons(Constantes.LG_B5)){
         HopperTalon.set(ControlMode.PercentOutput, -0.55);
     }
     else if(Robot.control.readJoystickButtons(Constantes.LG_B1)){
@@ -25,12 +25,12 @@ public void HopperTest(){
             Thread.currentThread().interrupt();
         }*/
 
-    }
-    else if(Robot.control.readPS4Buttons(7)){ //gatillo izquierdo 
+    //}
+        else if(Robot.control.readPS4Buttons(7)){ //gatillo izquierdo 
         HopperTalon.set(ControlMode.PercentOutput, -0.55);
     }
-    else{
-        HopperTalon.set(ControlMode.PercentOutput,0.0);
+      else{
+          HopperTalon.set(ControlMode.PercentOutput,0.0);
     }
 
     

@@ -101,7 +101,7 @@ public class SparkDrive {
 
     public void UlisesDrive(){
         
-        double sensitivity = 0.8;
+        double sensitivity = 1;
 
         DriveL1.set(-Sensitivity( Robot.control.readPS4Axis(Constantes.XB_LJ_Y), sensitivity));
         DriveL2.set(Sensitivity( Robot.control.readPS4Axis(Constantes.XB_LJ_Y), sensitivity));

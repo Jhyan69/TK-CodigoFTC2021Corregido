@@ -38,7 +38,7 @@ exampleDouble.set(Value.kOff);
     public void Control(){
         
 
-        if (Robot.control.readJoystickButtons(Constantes.LG_B4)) {
+        if (Robot.control.readJoystickButtons(Constantes.LG_B10)) { //b4
             try{
                 Thread.sleep(250);
             }

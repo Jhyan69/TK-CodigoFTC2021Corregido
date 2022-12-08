@@ -24,10 +24,10 @@ double Ypostition;
 
     public void DriveTrainTank(){
 
-        LeftJoystick = new SlewRateLimiter(1.75);
-        RightJoystick = new SlewRateLimiter(1.75);
-double drive = Robot.control.readPS4Axis(Constantes.XB_LJ_Y);
-double turn = Robot.control.readPS4Axis(Constantes.XB_RJ_X);
+        LeftJoystick = new SlewRateLimiter(2.00); //1.75
+        RightJoystick = new SlewRateLimiter(2.00); //1.75
+        double drive = Robot.control.readPS4Axis(Constantes.XB_LJ_Y);
+        double turn = Robot.control.readPS4Axis(Constantes.XB_RJ_X);
 
 
         double leftDrive = drive - turn;
